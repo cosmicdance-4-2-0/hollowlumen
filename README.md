@@ -21,11 +21,13 @@ A cozy **Tamagotchi-like creature collection game** set in a whimsical crochet w
 
 The small first experiment is to create, collect, name, pet, and favorite a few differently patterned critters, with local save/load and a widget-style mock display. Actual phone widget integration is an early required product proof, but not something the mock can claim to implement.
 
-**Not the current core:** cottage decoration, idle farming, adventures, shop/VIP packs, battery-charge bonuses, or online multiplayer. Those appeared in the original pitch; they are not requirements for the new direction.
+**Not the established prototype core:** cottage decoration, idle farming, shop/VIP packs, battery-charge bonuses, or online multiplayer. A **separate draft RPG expansion** now explores quests, battles, and one of three free starter patterns; these remain unapproved proposals, not implemented features.
 
 ## Documents
 
 - [Working product specification](docs/PRODUCT_SPEC.md): core loop, pattern/individual distinction, prospective genetics, widget, tiny checkpoints and open decisions.
+- [Gameplay loops and RPG expansion](docs/GAMEPLAY_EXPANSION.md): starter patterns, adventure, combat, progression, possible monetization, modular boundaries and reviewable milestones.
+- [Client review and acceptance plan](docs/CLIENT_REVIEW.md): unapproved product decisions, neutral playtests, evidence collection and acceptance gates.
 - [Lavender & Loop design language](docs/DESIGN_LANGUAGE.md): proposed pastel-purple palette, amigurumi art grammar, screen styling, type, widget presentation, and accessibility.
 - [Prototype brand kit](docs/BRAND_PROTOTYPE.md): editable SVG mascot mark, wordmark, app-icon candidate, hero banner, and usage guidance.
 - [Original README source audit](docs/SOURCE_AUDIT.md): what was described and why the prior "playable prototype" claim is not supported.
@@ -33,6 +35,6 @@ The small first experiment is to create, collect, name, pet, and favorite a few 
 
 ## Development state
 
-There is no application source or package manifest in this repository yet; no install, development-server, or build instructions can honestly be provided. This branch contains **proposed documentation only**. Before writing substantial code, resolve visual direction and the primary native widget platform.
+There is no application source or package manifest in this repository yet; no install, development-server, or build instructions can honestly be provided. This repository currently contains **proposed documentation and prototype brand art only**. Before writing substantial code, resolve visual direction and the primary native widget platform.
 
 **License:** Not selected. The absence of a license is not a license to redistribute source, art or assets.
