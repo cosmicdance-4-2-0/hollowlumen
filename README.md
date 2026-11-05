@@ -21,12 +21,13 @@ The current small prototype baseline describes a cozy **Tamagotchi-like creature
 
 The small first experiment is to create, collect, name, pet, and favorite a few differently patterned critters, with local save/load and a widget-style mock display. Actual phone widget integration is an early required product proof, but not something the mock can claim to implement.
 
-**Not the established prototype core:** cottage decoration, idle farming, shop/VIP packs, battery-charge bonuses, or online multiplayer. A **separate draft RPG expansion** now explores quests, battles, and one of three free starter patterns; these remain unapproved proposals, not implemented features.
+**Historical prototype scope:** The earlier *creature-only first toy* deliberately excluded cottage decoration, idle farming, shop/VIP packs, battery bonuses and multiplayer to keep initial validation small. The later [integrated homestead vision](docs/INTEGRATED_GAME_VISION.md) expressly reopens the cottage as a living home and workshop alongside creature adventure. These newer ideas are **not yet client-approved or implemented in this repository**. The original exclusion is not a permanent prohibition.
 
 ## Documents
 
 - [Working product specification](docs/PRODUCT_SPEC.md): core loop, pattern/individual distinction, prospective genetics, widget, tiny checkpoints and open decisions.
 - [Playable game hypothesis](docs/PLAYABLE_GAME_HYPOTHESIS.md): sharper home–make–venture–return loop, resident behavior, meaningful decisions, a small first game, and falsifiable checks.
+- [Team B synchronization brief](docs/TEAM_B_SYNCHRONIZATION_BRIEF.md): branch-closeout status, architecture reconciliation assignment, protected work and safe cross-team integration plan.
 - [Five-game mechanics sieve](docs/FIVE_GAME_MECHANICS_SIEVE.md): what to learn from Stardew Valley, Minecraft, Don't Starve, Pokémon and Animal Crossing, with explicit comparison and scope gates.
 - [Integrated homestead + adventure vision](docs/INTEGRATED_GAME_VISION.md): proposed synthesis of cottage, workshop, living critters, world exploration, encounters and a favorite widget.
 - [Gameplay opportunity map](docs/GAMEPLAY_OPPORTUNITY_MAP.md): kitchen-sink idea inventory, dependencies, anti-patterns and small falsifiable experiments.

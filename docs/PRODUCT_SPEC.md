@@ -6,6 +6,8 @@
 **Basis:** [Original repository pitch](https://github.com/cosmicdance-4-2-0/hollowlumen/blob/ac0317e250bef11c1f12abebe7be023aa41ecb47/README.md), followed by a direct user clarification on 2026-11-05.  
 **Provenance:** The clarification supersedes the earlier interpretation that this was principally a cottage-decoration/life-simulation game. See [source audit](SOURCE_AUDIT.md).
 
+> **Scope-history notice (2026-11-05):** This file preserves a deliberately narrow creature-first prototype definition. Its historical exclusions of cottage/idle/adventure systems are **not enduring prohibitions**. Later user-directed design work explicitly explores integrating homestead life and creature adventures. See [Integrated Game Vision](INTEGRATED_GAME_VISION.md) and [Playable Game Hypothesis](PLAYABLE_GAME_HYPOTHESIS.md). That expansion, too, remains **unapproved by the client**, and is not an order to rewrite existing code. Preserve this baseline as design history while resolving actual scope through review.
+
 > **A Tamagotchi-like collection of living crochet critters. Discover increasingly complex crochet patterns, bring new critters to life, care for them, and keep a favorite with you on your phone.** Inherited traits and selective breeding are potential later features; Spore-scale creature evolution is future exploration, not today's scope.
 
 ## 1. What the game is
