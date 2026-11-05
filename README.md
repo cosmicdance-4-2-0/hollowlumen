@@ -22,6 +22,7 @@ The small first experiment is to create, collect, name, pet, and favorite a few 
 ## Documents
 
 - [Working product specification](docs/PRODUCT_SPEC.md): core loop, pattern/individual distinction, prospective genetics, widget, tiny checkpoints and open decisions.
+- [Lavender & Loop design language](docs/DESIGN_LANGUAGE.md): proposed pastel-purple palette, amigurumi art grammar, screen styling, type, widget presentation, and accessibility.
 - [Original README source audit](docs/SOURCE_AUDIT.md): what was described and why the prior "playable prototype" claim is not supported.
 - [Original concept pitch at the initial revision](https://github.com/cosmicdance-4-2-0/hollowlumen/blob/ac0317e250bef11c1f12abebe7be023aa41ecb47/README.md).
 
