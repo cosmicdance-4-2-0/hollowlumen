@@ -26,7 +26,7 @@
 
 | ID | Observation | Why it matters | Recommended disposition |
 | --- | --- | --- | --- |
-| F-01 | README says **Playable prototype**, lists completed roadmap items and provides npm build/run commands; repo has README only. | Unsupported status and unusable onboarding. | Update README after spec approval to say **concept/specification**; only claim builds with evidence. |
+| F-01 | README says **Playable prototype**, lists completed roadmap items and provides npm build/run commands; repo has README only. | Unsupported status and unusable onboarding. | The proposed branch corrects the README to **concept/specification**; only claim builds with evidence. |
 | F-02 | “Web prototype” and “battery widget” blur an in-app UI with a real mobile home-screen widget. | Wrong platform commitments; native work is separate. | Define in-app companion panel versus native iOS/Android widget. |
 | F-03 | Claimed >~70% battery gameplay bonus rests on API support not guaranteed in browsers. | Cross-platform parity and fairness risk. | Capability-gated optional presentation; owner decides any reward effect. |
 | F-04 | **No paid power** clashes with “Hollow Patron” **faster idle**. | Core product promise contradicted. | Defer monetization and explicitly decide cosmetic-only versus paid convenience. |
@@ -57,7 +57,7 @@
 - Did not implement gameplay, create a build manifest, or fabricate demo screenshots.
 - Did not lock a framework, rendering engine, cloud backend, or monetary model.
 - Did not copy unverified README completion checkmarks into an engineering roadmap.
-- Did not modify the original README; historical source claims remain available for review, and its status must be corrected before describing this repository as a runnable prototype.
+- Replaced the misleading default README on this proposed branch with a truthful specification entrypoint. The original wording remains available through the pinned source commit above, and main is unchanged unless this proposal is merged.
 
 ## 5. Suggested next review checkpoint
 
