@@ -223,7 +223,11 @@ Tokens should remain semantic and be mapped into whatever platform implementatio
 
 **DV-07 — Originality/licensing:** inspiration images are reference only. Produce original critter models and artwork; document asset authorship/licensing before release.
 
-## 11. Open design choices
+## 11. Provisional brand assets
+
+An editable SVG brand prototype now accompanies this language: [brand kit and usage notes](BRAND_PROTOTYPE.md). It includes a stitched-critter emblem, lowercase wordmark, app-icon candidate and README banner. All are experimental and should be tested against the product owner's taste before being treated as a fixed identity. The wordmark uses system-font fallbacks, not an embedded official typeface.
+
+## 12. Open design choices
 
 - Is the illustrated world more **storybook-flat** or **tactile dimensional plush**? Test one critter in each style, then commit.
 - What are the two or three **signature starter critter silhouettes**?
