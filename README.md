@@ -27,6 +27,7 @@ The small first experiment is to create, collect, name, pet, and favorite a few 
 
 - [Working product specification](docs/PRODUCT_SPEC.md): core loop, pattern/individual distinction, prospective genetics, widget, tiny checkpoints and open decisions.
 - [Gameplay loops and RPG expansion](docs/GAMEPLAY_EXPANSION.md): starter patterns, adventure, combat, progression, possible monetization, modular boundaries and reviewable milestones.
+- [Zero-sacred-cows concept review](docs/CONCEPT_DEMOLITION_REVIEW.md): critical comparison of the RPG conventions with a material-driven Threadwork alternative, originality/IP questions and tiny falsifiable prototypes.
 - [Client review and acceptance plan](docs/CLIENT_REVIEW.md): unapproved product decisions, neutral playtests, evidence collection and acceptance gates.
 - [Lavender & Loop design language](docs/DESIGN_LANGUAGE.md): proposed pastel-purple palette, amigurumi art grammar, screen styling, type, widget presentation, and accessibility.
 - [Prototype brand kit](docs/BRAND_PROTOTYPE.md): editable SVG mascot mark, wordmark, app-icon candidate, hero banner, and usage guidance.

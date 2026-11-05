@@ -63,3 +63,22 @@ For every client review, record only information authorized for this public repo
 **Not decided:** Whether the broader RPG supersedes the present cozy prototype. Until client review, treat the expansion as a parallel product hypothesis, not a signed-off scope increase.
 
 **Current evidence:** Repository documents and prototype brand assets; no running gameplay, playtests or native widget. This plan has not itself been tested with the client.
+
+## New challenger study: conventional combat versus Threadwork (OPEN)
+
+The [zero-sacred-cows concept review](CONCEPT_DEMOLITION_REVIEW.md) questions whether the RPG's recognizable creature-battler structure is the right product shape. It is **not a replacement spec**.
+
+Additional review questions:
+- **CL-12 — Interaction identity:** Conventional turn-based critter battle, textile/environmental Threadwork, a hybrid, or neither?
+- **CL-13 — Opening authorship:** Three starter creature patterns versus three starter crafting disciplines (Shape / Flow / Join)?
+- **CL-14 — Variation:** Individual random traits, versioned pattern lineage, or both in different roles?
+- **CL-15 — Collection scale:** Large inventory versus a smaller, more meaningful workshop cast?
+- **CL-16 — Creative originality:** Which aspects feel recognizably Hollowlumen rather than familiar genre conventions?
+
+**Proposed paired encounter trial:** Same critter, comparable visual polish and onboarding, one short conventional battle and one material-interaction challenge. Evaluate comprehension, decision quality, willingness to replay, emotional fit and whether the creature's construction actually matters. Do not presume Threadwork wins. Also allow rejection of both.
+
+**Test integrity:** Record which prototype was shown first; rotate the order between testers if there is more than one. Don't claim statistical results from one client's preference. If no playable prototype exists, treat feedback on sketches only as conceptual preference, not proof of gameplay enjoyment.
+
+**IP/design gate:** No creature capture in balls. Original creature art, world expression and UI are required; similarity review should consider combined presentation and not only isolated mechanics. Qualified legal review remains a separate commercial-release requirement.
+
+All five new questions are OPEN. No client answer or test outcome has been recorded.
