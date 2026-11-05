@@ -1,44 +1,32 @@
-# Lumenette Hollow (working title)
+# Hollowlumen — Crochet Creature World
 
-**Project status: concept development / proposed specification.**  
-**Repository:** hollowlumen  
-**Implementation:** No runnable game, package manifest, or executable prototype is currently present in this repository.
+**Status:** Concept and specification draft; **no runnable prototype yet**.  
+**Title:** Working title (*Lumenette Hollow* appeared in the original pitch).
 
-> A gentle, craft-centered rural fantasy life sim about living yarn companions, cozy spaces, and short adventures. Designed to fit into real life rather than compete with it.
+> Make little living crochet creatures. Discover more complex patterns, grow a collection of unique critters, care for them, and choose a favorite to live on your phone.
 
-## The idea
+## What we're making
 
-In a quiet valley of mossy burrows and cottages lives a community of **Lumenettes**: expressive, glowing, living-yarn creatures. Players personalize a companion and a home, gather and craft materials, and optionally wander into the valley for small, curious adventures.
+A cozy **Tamagotchi-like creature collection game** set in a whimsical crochet world.
 
-The original pitch suggested brief (1–5 minute) visits, optional (1–3 minute) excursions, bounded offline progress, friend visits, cosmetics, and a companion on a phone's home screen. Those ideas remain **concepts**, not evidence of implemented features.
+- **Patterns** determine what kinds of crochet critters can be made. Finding more advanced patterns opens up new shapes and possibilities.
+- **Critters** are individual companions. Two made from the same pattern can look or behave differently and remain independently collectible.
+- **Companionship** is central: interact with, name, enjoy, and favor a critter.
+- **Phone favorite:** the selected critter should live in a home-screen widget, subject to actual Android/iOS integration.
+- **Possible later depth:** inherited traits, breeding for particular strains, and much later Spore-like complexity. These are design ideas, **not current commitments**.
 
-## Product principles (proposed)
+The small first experiment is to create, collect, name, pet, and favorite a few differently patterned critters, with local save/load and a widget-style mock display. Actual phone widget integration is an early required product proof, but not something the mock can claim to implement.
 
-- **Respect the player's time.** Progress can be meaningful without daily obligations or punishment for absence.
-- **Craft and express.** The home and the companion feel personally made.
-- **Companionship over optimization.** Expressive character moments matter more than stat inflation.
-- **Adventure by choice.** Outings complement the cozy game; they do not gate it.
-- **Earn trust.** Platform capabilities, monetization, privacy, and feature status must be described accurately.
+**Not the current core:** cottage decoration, idle farming, adventures, shop/VIP packs, battery-charge bonuses, or online multiplayer. Those appeared in the original pitch; they are not requirements for the new direction.
 
-## Current design documents
+## Documents
 
-| Document | Purpose | Status |
-| --- | --- | --- |
-| [Product and systems specification](docs/PRODUCT_SPEC.md) | Candidate requirements, core loop, technical boundaries, phased milestones, acceptance checks | Draft; product-owner review required |
-| [Source audit and decision triage](docs/SOURCE_AUDIT.md) | Evidence, contradictions and decisions left unresolved by the original pitch | Documented findings |
+- [Working product specification](docs/PRODUCT_SPEC.md): core loop, pattern/individual distinction, prospective genetics, widget, tiny checkpoints and open decisions.
+- [Original README source audit](docs/SOURCE_AUDIT.md): what was described and why the prior "playable prototype" claim is not supported.
+- [Original concept pitch at the initial revision](https://github.com/cosmicdance-4-2-0/hollowlumen/blob/ac0317e250bef11c1f12abebe7be023aa41ecb47/README.md).
 
-The [original pitch is preserved at this pinned revision](https://github.com/cosmicdance-4-2-0/hollowlumen/blob/ac0317e250bef11c1f12abebe7be023aa41ecb47/README.md). Its claimed playable prototype, npm commands, completion checkboxes, and selected framework list were **not verified** because the tree contains no app source.
+## Development state
 
-## Proposed first playable milestone
+There is no application source or package manifest in this repository yet; no install, development-server, or build instructions can honestly be provided. This branch contains **proposed documentation only**. Before writing substantial code, resolve visual direction and the primary native widget platform.
 
-A single, complete loop: meet one Lumenette, decorate one cottage area, gather materials over time, craft one item, play one optional outing, save, and return. The first code milestone will not imply real multiplayer, purchases, or native battery widgets.
-
-Before implementation, the product owner should resolve the key questions in the specification: core delight, target platform, how crochet works, visual style, battery integration, and any commerce boundary.
-
-## Contributing and execution
-
-This repository is at the **specification** stage. There is no currently supported install, test, or run command. Implementation instructions will be added only alongside a real build and verified checks.
-
-Propose changes to the specification through reviewable branches or pull requests. Distinguish product decisions from engineering assumptions and do not mark features complete without runnable evidence.
-
-**License:** Not selected. Do not assume code or art redistribution rights from the absence of a license.
+**License:** Not selected. The absence of a license is not a license to redistribute source, art or assets.
