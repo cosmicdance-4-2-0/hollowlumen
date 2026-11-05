@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
+<title id="title">Hollowlumen prototype banner</title>
+<desc id="desc">Warm cream and lavender banner with a stitched crochet critter, Hollowlumen title, and pastel yarn-thread details.</desc>
+<defs>
+<linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF9F4"/><stop offset=".62" stop-color="#FBF8FF"/><stop offset="1" stop-color="#E8DAFA"/></linearGradient>
+</defs>
+<rect width="1200" height="350" rx="26" fill="url(#paper)"/>
+<circle cx="1035" cy="172" r="165" fill="#E8DAFA" opacity=".64"/>
+<circle cx="1100" cy="60" r="92" fill="#F9DDEB" opacity=".54"/>
+<circle cx="1080" cy="303" r="95" fill="#D8F1E6" opacity=".64"/>
+<path d="M17 298 C95 253 141 287 197 285 S329 319 382 306 C458 287 509 314 557 293" fill="none" stroke="#D8C3F2" stroke-width="5" stroke-linecap="round"/>
+<path d="M577 38 c14 18 18 16 35 2 c-17 15-13 25-3 38 c-14-16-19-17-32-5 c13-17 13-23 0-35" fill="#F8E9BF" opacity=".95"/>
+<g transform="translate(44 55) scale(1.46)">
+  <path d="M49 52 C35 38 35 21 45 19 C58 15 68 33 71 49" fill="#F9DDEB" stroke="#67438D" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M110 53 C123 38 124 21 114 19 C101 15 92 33 89 49" fill="#F9DDEB" stroke="#67438D" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M55 47 C44 35 45 27 49 27 C55 28 62 36 65 46" fill="#E8DAFA"/>
+  <path d="M105 47 C115 35 114 27 110 27 C104 28 98 36 95 46" fill="#E8DAFA"/>
+  <path d="M80 41 C105 41 125 60 125 91 C125 116 109 133 80 133 C50 133 35 115 35 90 C35 61 52 41 80 41 Z" fill="#E8DAFA" stroke="#67438D" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M49 64 l6 5 6-5 m13-7 l6 5 6-5 m13 7 l6 5 6-5 M44 82 l6 5 6-5 m48 0 l6 5 6-5 M54 115 l5 5 5-5 m11 8 l5 5 5-5 m11-8 l5 5 5-5" fill="none" stroke="#BEA5E5" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M59 79 q7 -4 12 0" fill="none" stroke="#332940" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M89 79 q7 -4 12 0" fill="none" stroke="#332940" stroke-width="4.5" stroke-linecap="round"/>
+  <ellipse cx="58" cy="93" rx="7" ry="4.2" fill="#F5B8C9" opacity=".86"/>
+  <ellipse cx="102" cy="93" rx="7" ry="4.2" fill="#F5B8C9" opacity=".86"/>
+  <path d="M74 94 q6 8 12 0" fill="none" stroke="#332940" stroke-width="3.7" stroke-linecap="round"/>
+  <path d="M117 117 C132 127 151 114 146 100 C142 90 133 96 136 103 C138 108 147 109 152 105" fill="none" stroke="#67438D" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<text x="308" y="154" font-family="ui-rounded, 'Trebuchet MS', 'Arial Rounded MT Bold', system-ui, sans-serif" font-size="82" letter-spacing="-3" font-weight="750" fill="#67438D">hollowlumen</text>
+<path d="M314 174 C392 188 461 170 521 180 C583 189 656 180 728 177" stroke="#BEA5E5" stroke-width="5" fill="none" stroke-linecap="round"/>
+<text x="316" y="229" font-family="ui-rounded, system-ui, sans-serif" font-size="26" letter-spacing=".5" fill="#635574">Little crochet companions. Endless possibilities.</text>
+<text x="317" y="267" font-family="ui-rounded, system-ui, sans-serif" font-size="17" letter-spacing="3" fill="#67438D">A COZY CREATURE COLLECTING GAME</text>
+<g transform="translate(860 89)">
+  <path d="M75 50 C60 15 47 5 38 16 C25 29 36 53 48 69" fill="#D8F1E6" stroke="#67438D" stroke-width="5"/>
+  <path d="M121 50 C136 15 149 5 158 16 C171 29 160 53 148 69" fill="#D8F1E6" stroke="#67438D" stroke-width="5"/>
+  <path d="M98 41 C151 41 175 75 166 131 C159 169 136 184 100 184 C62 184 38 164 32 128 C22 75 47 41 98 41Z" fill="#D8F1E6" stroke="#67438D" stroke-width="5"/>
+  <path d="M55 84 l8 7 8-7 m45 0 l8 7 8-7 M58 139 l8 7 8-7 m36 0 l8 7 8-7" fill="none" stroke="#9CCFB9" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="76" cy="112" r="5" fill="#332940"/><circle cx="122" cy="112" r="5" fill="#332940"/>
+  <path d="M92 129 q9 8 16 0" fill="none" stroke="#332940" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="65" cy="128" r="7" fill="#F9DDEB"/><circle cx="136" cy="128" r="7" fill="#F9DDEB"/>
+</g>
+<path d="M1090 70 l9 21 21 9 -21 9 -9 21 -9-21 -21-9 21-9 Z" fill="#E7BF71"/>
+<path d="M1161 237 l5 13 13 5 -13 5 -5 13 -5-13 -13-5 13-5Z" fill="#BEA5E5"/>
+</svg>
