@@ -198,3 +198,13 @@ This is not a mandate for a new engine, ECS, live service or universal physics s
 **Implementation:** No code or native widget is created by this document. Existing shipped/merged code is not to be destroyed to make this proposal convenient.
 
 **Next design checkpoint:** Review the [Gameplay Opportunity Map](GAMEPLAY_OPPORTUNITY_MAP.md) and [Client Review](CLIENT_REVIEW.md), choose the smallest comparative interaction sketches, and gather observed reactions before expanding engineering scope.
+
+## Addendum — Five-game sieve and inhabited home hypothesis (2026-11-05)
+
+The later reports that the client enjoys **Stardew Valley, Minecraft, Don't Starve and Pokémon**, plus observed repeat play of **Animal Crossing**, motivate an additional design hypothesis: the cottage should feel **inhabited by player-created residents**, not only decorated. This is an interpretation to test, not evidence that any particular subsystem is preferred.
+
+- See [Playable Game Hypothesis](PLAYABLE_GAME_HYPOTHESIS.md) for the proposed game identity, player decisions, loops, single integrated scenario, and falsifiable acceptance criteria.
+- See [Five-Game Mechanics Sieve](FIVE_GAME_MECHANICS_SIEVE.md) for a mechanics-level keep/transform/compare/park analysis, including the possibility that **a cozy home and dangerous expeditions can strengthen one another**.
+- Earlier RPG and Threadwork proposals remain preserved. The new documents **do not** approve a resident simulator, survival mode, combat system, exact starter format or new implementation scope.
+
+**New strongest candidate loop:** Construct a companion → give it a place in the home → prepare for a meaningful outing → use what was built → return to a home changed by the result. The player may also choose a short purely cozy visit.

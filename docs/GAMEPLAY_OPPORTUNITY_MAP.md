@@ -153,3 +153,13 @@ No early commitment to massive open world, universal yarn simulation, procedural
 **Assistant-proposed:** Home locations, specific gameplay catalog, encounters, experiments and architectural order.
 
 **Not approved or tested:** All individual features in this document except for any separately established existing prototype functionality in the implementation repository. This document does not alter either repository's code or mean the other team has accepted these ideas.
+
+## Addendum — cross-game mechanics and resident inhabitation (2026-11-05)
+
+The [Five-Game Mechanics Sieve](FIVE_GAME_MECHANICS_SIEVE.md) adds inspiration from Stardew Valley, Minecraft, Don't Starve, Pokémon and Animal Crossing, with the last serving as a **hypothesis about inhabiting a personal space**, not simply decorating one. The [Playable Game Hypothesis](PLAYABLE_GAME_HYPOTHESIS.md) turns that into a minimal, testable game loop.
+
+**Additional candidate experiments:** A room with two critters and three furnishing affordances; meaningful construction capability versus cosmetic-only choices; an expedition with recoverable risk; direct battle versus Threadwork; and returning home to a visible consequence.
+
+**Dependency warning:** Before expanding residents, implementable identity must change from one customizable mascot to a persistent collection of individuals using explicit IDs and versioned save migration. This is an architectural recommendation, not approval to change the implementation repo.
+
+These are **hypotheses under client review**, not accepted milestones.

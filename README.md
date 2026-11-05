@@ -11,7 +11,7 @@
 
 ## What we're making
 
-A cozy **Tamagotchi-like creature collection game** set in a whimsical crochet world.
+The current small prototype baseline describes a cozy **Tamagotchi-like creature collection game**. Our broader, **unapproved** design research now explores a **living, handmade homestead adventure**: make individual critters, give them a home, venture into a world that tests their construction, and return to a cottage that remembers the result. Existing cottage-sim gameplay and creature-adventure concepts are intended to complement rather than displace one another.
 
 - **Patterns** determine what kinds of crochet critters can be made. Finding more advanced patterns opens up new shapes and possibilities.
 - **Critters** are individual companions. Two made from the same pattern can look or behave differently and remain independently collectible.
@@ -26,6 +26,8 @@ The small first experiment is to create, collect, name, pet, and favorite a few 
 ## Documents
 
 - [Working product specification](docs/PRODUCT_SPEC.md): core loop, pattern/individual distinction, prospective genetics, widget, tiny checkpoints and open decisions.
+- [Playable game hypothesis](docs/PLAYABLE_GAME_HYPOTHESIS.md): sharper home–make–venture–return loop, resident behavior, meaningful decisions, a small first game, and falsifiable checks.
+- [Five-game mechanics sieve](docs/FIVE_GAME_MECHANICS_SIEVE.md): what to learn from Stardew Valley, Minecraft, Don't Starve, Pokémon and Animal Crossing, with explicit comparison and scope gates.
 - [Integrated homestead + adventure vision](docs/INTEGRATED_GAME_VISION.md): proposed synthesis of cottage, workshop, living critters, world exploration, encounters and a favorite widget.
 - [Gameplay opportunity map](docs/GAMEPLAY_OPPORTUNITY_MAP.md): kitchen-sink idea inventory, dependencies, anti-patterns and small falsifiable experiments.
 - [Gameplay loops and RPG expansion](docs/GAMEPLAY_EXPANSION.md): starter patterns, adventure, combat, progression, possible monetization, modular boundaries and reviewable milestones.

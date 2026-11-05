@@ -101,3 +101,20 @@ Additional client decisions to validate:
 **Engineering gate:** Preserve the existing web prototype's save and economy behavior while testing the new mechanics on an isolated branch. The two project forks have different scopes and are not automatically integrated; no code migration is authorized by this document.
 
 All CL-17 through CL-23 remain **OPEN**. No client signoff, game test or native-widget test is inferred.
+
+## Five-game inspiration and inhabited-home hypothesis (OPEN; 2026-11-05)
+
+The user reports the client's favorite games as Stardew Valley, Minecraft, Don't Starve and Pokémon; the user has also observed her returning to Animal Crossing on Switch. This signals engagement, **not** a known preference for any one mechanic. The [Five-Game Mechanics Sieve](FIVE_GAME_MECHANICS_SIEVE.md) and [Playable Game Hypothesis](PLAYABLE_GAME_HYPOTHESIS.md) propose neutral tests and an integrated home–frontier experience.
+
+New decisions, all **OPEN**:
+- **CL-24 — Animal Crossing appeal:** Is the main draw decorating, resident relationships, collecting, repeated visits, or something else?
+- **CL-25 — Home inhabitation:** Do small personalized critter habits and furnishing interactions increase attachment?
+- **CL-26 — Frontier stakes:** Does recoverable risk, careful preparation, and occasional retreat sound enjoyable, or should adventures stay gentle?
+- **CL-27 — Favorite game activities:** Which parts of each of the five games does the client repeatedly choose, skip or dislike?
+- **CL-28 — Return-home satisfaction:** Is a changed resident/visitor/world more compelling than a material-only quest reward?
+- **CL-29 — Creature construction tradeoffs:** Do meaningful structural capabilities strengthen creativity or make aesthetic choices feel constrained?
+- **CL-30 — Play rhythm:** Which activities suit a quick check-in, and which would justify an extended adventure?
+
+**Practical trial:** Demonstrate a home scene with an individual critter responding to a furnishings choice, then a small constructed-capability expedition with an authored obstacle and a visible home consequence. Pair a low-risk and a recoverable-risk version of the outing. Observe what she chooses to repeat; do not presume a gentle aesthetic implies an aversion to challenge.
+
+**Evidence and privacy:** Record only feedback approved for this public repository. Do not infer client preferences from observed playtime alone. No client answers or experiment outcomes are recorded in this addendum.
