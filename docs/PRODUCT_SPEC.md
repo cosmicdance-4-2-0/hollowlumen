@@ -167,9 +167,13 @@ Keep content data and simulation rules apart. Expose random source and clock via
 
 Each checkpoint needs a working artifact and evidence relevant to its claim. A written spec does not mark code complete.
 
-## 9. Decisions we actually need next
+## 9. Design-language candidate
 
-1. **Critter visual form:** 2D handmade illustration, sprite/rigged 2D, or small 3D plush? This determines how cheaply patterns and traits can combine.
+The proposed [Lavender & Loop design language](DESIGN_LANGUAGE.md) establishes purple/pastel surfaces, darker readable controls, tactile amigurumi construction, collectible critter presentation, and widget-first scaling. It is **proposed**, not product-owner approved. It answers an aesthetic direction without locking 2D versus 3D rendering or an art technology stack.
+
+## 10. Decisions we actually need next
+
+1. **Critter visual form:** confirm whether Lavender & Loop's tactile amigurumi creatures should be illustrated 2D, sprite/rigged 2D, or small 3D plush. This determines how cheaply patterns and traits can combine.
 2. **Initial target phone:** Android, iOS, or both? This affects the widget experiment.
 3. **Care intensity:** merely expressive petting/play, or actual Tamagotchi needs and consequences?
 4. **Pattern discovery:** what enjoyable action unlocks a new body plan?
@@ -178,7 +182,7 @@ Each checkpoint needs a working artifact and evidence relevant to its claim. A w
 
 These are questions, not blockers for concept exploration. Do not substitute implementation guesses for the product owner's choices.
 
-## 10. Definition of done for this document
+## 11. Definition of done for this document
 
 **This draft is useful** when it distinguishes the essential creature experience from possible future extensions and can guide a cheap prototype.
 
