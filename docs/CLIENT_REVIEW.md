@@ -82,3 +82,22 @@ Additional review questions:
 **IP/design gate:** No creature capture in balls. Original creature art, world expression and UI are required; similarity review should consider combined presentation and not only isolated mechanics. Qualified legal review remains a separate commercial-release requirement.
 
 All five new questions are OPEN. No client answer or test outcome has been recorded.
+
+## Integrated homestead + adventure direction (OPEN; 2026-11-05)
+
+The [Integrated Game Vision](INTEGRATED_GAME_VISION.md) proposes **combining**, not choosing between, cottage life and the creature-construction adventure. The [Gameplay Opportunity Map](GAMEPLAY_OPPORTUNITY_MAP.md) catalogs possibilities without turning them into implementation requirements. No client review of this synthesis has been recorded.
+
+Additional client decisions to validate:
+- **CL-17 — Preferred balance:** More home/decorating, more exploration/encounters, or a flexible mixture?
+- **CL-18 — Cottage meaning:** Mainly cozy decoration, interactive workshop, residents' behaviors, commissions, gardening, or a subset?
+- **CL-19 — Reward emphasis:** Materials, new patterns, world restoration, creature relationships, or another motivator?
+- **CL-20 — Adventure consequence:** Is a repaired world/home response more satisfying than accumulating coins or points?
+- **CL-21 — Session flexibility:** Does the client enjoy short companionship sessions as well as longer adventures without pressure to check in?
+- **CL-22 — Creature identity:** Would they rather maintain a small meaningful resident cast or a much larger collection?
+- **CL-23 — Visual integration:** Does the other team's day/night cottage style suit the construction workshop, adventure and widget together?
+
+**Product observation:** Show one consistent creature moving between a home scene, a pattern-creation screen and a short authored outing; after the outing, show a persistent consequence back at home. Ask what the client wants to revisit. Do not treat a conceptual slideshow as proof of playability.
+
+**Engineering gate:** Preserve the existing web prototype's save and economy behavior while testing the new mechanics on an isolated branch. The two project forks have different scopes and are not automatically integrated; no code migration is authorized by this document.
+
+All CL-17 through CL-23 remain **OPEN**. No client signoff, game test or native-widget test is inferred.

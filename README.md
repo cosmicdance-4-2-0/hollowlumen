@@ -26,6 +26,8 @@ The small first experiment is to create, collect, name, pet, and favorite a few 
 ## Documents
 
 - [Working product specification](docs/PRODUCT_SPEC.md): core loop, pattern/individual distinction, prospective genetics, widget, tiny checkpoints and open decisions.
+- [Integrated homestead + adventure vision](docs/INTEGRATED_GAME_VISION.md): proposed synthesis of cottage, workshop, living critters, world exploration, encounters and a favorite widget.
+- [Gameplay opportunity map](docs/GAMEPLAY_OPPORTUNITY_MAP.md): kitchen-sink idea inventory, dependencies, anti-patterns and small falsifiable experiments.
 - [Gameplay loops and RPG expansion](docs/GAMEPLAY_EXPANSION.md): starter patterns, adventure, combat, progression, possible monetization, modular boundaries and reviewable milestones.
 - [Zero-sacred-cows concept review](docs/CONCEPT_DEMOLITION_REVIEW.md): critical comparison of the RPG conventions with a material-driven Threadwork alternative, originality/IP questions and tiny falsifiable prototypes.
 - [Client review and acceptance plan](docs/CLIENT_REVIEW.md): unapproved product decisions, neutral playtests, evidence collection and acceptance gates.
