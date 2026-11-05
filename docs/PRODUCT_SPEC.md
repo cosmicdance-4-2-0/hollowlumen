@@ -1,249 +1,187 @@
-# Lumenette Hollow — Product and Systems Specification
+# Hollowlumen — Crochet Creature Game Specification
 
-**Version:** 0.1.0-draft  
-**Status:** PROPOSED — not product-owner approved  
-**Prepared:** 2026-11-05  
-**Source baseline:** [README.md at ac0317e](https://github.com/cosmicdance-4-2-0/hollowlumen/blob/ac0317e250bef11c1f12abebe7be023aa41ecb47/README.md)  
-**Companion document:** [Source audit and decisions](SOURCE_AUDIT.md)
+**Version:** 0.2.0-draft  
+**Status:** Working concept, not product-owner approved  
+**Updated:** 2026-11-05  
+**Basis:** [Original repository pitch](https://github.com/cosmicdance-4-2-0/hollowlumen/blob/ac0317e250bef11c1f12abebe7be023aa41ecb47/README.md), followed by a direct user clarification on 2026-11-05.  
+**Provenance:** The clarification supersedes the earlier interpretation that this was principally a cottage-decoration/life-simulation game. See [source audit](SOURCE_AUDIT.md).
 
-> This document reconstructs a testable concept from a single unverified pitch. It is **not** an assertion that described features exist, that a technical stack has been chosen, or that unresolved product decisions have been made.
+> **A Tamagotchi-like collection of living crochet critters. Discover increasingly complex crochet patterns, bring new critters to life, care for them, and keep a favorite with you on your phone.** Inherited traits and selective breeding are potential later features; Spore-scale creature evolution is future exploration, not today's scope.
 
-## 0. Reading this specification
+## 1. What the game is
 
-- **SOURCE**: an idea or claim present in the baseline README; not automatically validated or approved.
-- **PROPOSAL**: an engineering or design recommendation added in this reconstruction.
-- **OPEN**: a decision requiring the product owner's direction.
-- **REQUIREMENT (candidate)**: a testable condition proposed for an eventual approved build.
-- **IMPLEMENTED**: reserved for a feature verified in actual source and with relevant checks; **no features currently qualify** in the inspected repository.
+A cozy *crochet-creature collection and companionship* game, working title **Hollowlumen** (the original README calls it *Lumenette Hollow*). Players inhabit a whimsical **Crochet World**, fill a collection with handmade living yarn critters, and select one favorite to accompany them through a phone home-screen widget.
 
-Identifiers are stable for review. A proposal becomes binding only when accepted in a subsequent versioned specification. Treat example tuning parameters as configuration candidates, not hidden constants.
+**User-directed core concept (confirmed as direction, not finished feature design):**
 
-## 1. Product identity
+1. **Collect critters** that inhabit a crochet-themed world.
+2. **Discover patterns** of increasing complexity, which enable creating new critter types.
+3. **Raise and enjoy critters** with a Tamagotchi-like relationship.
+4. **Choose one favorite** from the collection to inhabit the phone widget.
+5. **Possibly explore genetics**: random traits, inherited traits, selective breeding, and pure strains.
+6. **Perhaps eventually explore Spore-like complexity**, but explicitly not now.
 
-### 1.1 One-sentence concept [SOURCE]
+**Removed from core scope:** cottage decoration, farm work, resource-idle generators, minigame adventures, shop/VIP packs, live social visits, battery-based reward boosts, and an elaborate campaign. These were in the original pitch but are **not accepted as required features**. Keep them as unprioritized ideas, not deliverables.
 
-**Lumenette Hollow** is a relaxed, craft-centered rural-fantasy life sim in which players care for expressive living-yarn companions (Lumenettes), personalize a cottage and garden, and optionally take short excursions to gather materials.
+The player's main object of attachment is the **individual critter**, not a house, inventory economy, or progression clock.
 
-The GitHub repository is named **hollowlumen**; this does not itself establish the shipping game's title. The README uses *Lumenette Hollow*, the companion species *Lumenettes*, and *Pip* as an example/starter name.
+## 2. Core play loop [candidate]
 
-### 1.2 Intended experience [SOURCE + PROPOSAL]
+**Find or unlock a pattern → create a critter → discover its appearance/personality → interact and bond → grow the collection → pursue another pattern or variation.**
 
-The player should feel that they can return for a minute, accomplish something pleasant, and leave without penalty or anxiety. Expression and companionship are central; optimization is optional. The rural fantasy should feel tactile, gentle, whimsical, and legible even on a small display.
+The player can designate any owned critter as favorite. The favorite appears in the game and, when platform integration is available, in a phone home-screen widget. Switching favorites changes the widget's companion.
 
-**Candidate product pillars:**
+The loop should work even when the player is only interested in pet care, only interested in collecting variants, or only interested in making visually interesting creations.
 
-1. **Respect time:** meaningful actions in short sessions; no mandatory appointment mechanics or streak punishments.
-2. **Make something personal:** decorating, crochet/yarn themes, and a recognizable companion.
-3. **Companions feel present:** customization, expression, and reactions matter more than grinding stats.
-4. **Curiosity over jeopardy:** short optional outings add variety without blocking the cozy loop.
-5. **Return at your own pace:** offline accumulation is bounded, transparent, and never a pressure tactic.
+### Design pillars
 
-**Anti-goals [PROPOSAL]:** mandatory real-time social participation, hostile combat as the main mechanic, energy walls that force purchases, punitive pet-neglect systems, unskippable daily chores, artificially scarce paid power, or gameplay that requires constant connectivity.
+- **Living crochet, not crochet instruction.** Crochet patterns are the imaginative in-world recipes/blueprints of living critters; the game does not need to teach real stitches unless expressly designed later.
+- **Individuals matter.** The same pattern can yield recognizably different critters.
+- **Progress unlocks possibility.** More advanced patterns allow more interesting anatomy, silhouettes, traits, or combinations—not simply bigger numerical stats.
+- **A favorite goes with you.** The widget is a product-defining feature, not a decorative afterthought.
+- **Delight without obligation.** Care should be engaging and expressive without punishing normal absences. Whether explicit hunger, mood, aging, or mortality exists is an *open design decision*, not an assumed Tamagotchi copy.
+- **Expandable, not overbuilt.** Make content and traits extensible, but do not build hypothetical evolution engines today.
 
-### 1.3 Audience and platforms
+## 3. The smallest playable toy
 
-- **SOURCE:** mobile-friendly and PC/web play; primary interactions should suit 1–5-minute sessions.
-- **PROPOSAL:** responsive **web-first** delivery for the first playable vertical slice, with touch, mouse, and keyboard support. This is a delivery strategy, **not** approval of React/TanStack/Tailwind/Zustand.
-- **OPEN:** whether a native Android/iOS release is a foundational goal or a later adaptation.
-- **OPEN:** whether “baby-friendly sessions” means *caregiver-friendly session lengths*, child suitability, or both. No age rating or child-data policy can be inferred from the phrase.
+The first prototype should answer **one question**: *Is it enjoyable to make, collect, personalize, and care about these little crochet critters?*
 
-## 2. Player-facing experience
+Suggested toy content (illustrative, not a fixed art/content budget):
 
-### 2.1 Core loop [SOURCE, formalized as PROPOSAL]
+- One starter critter, with a name and a small set of expressive reactions.
+- Two or three visually distinct crochet patterns, each creating a recognizable critter body.
+- A few visible variations such as yarn colors, ear shapes, or stitched facial expressions.
+- A **collection screen** to revisit individual critters rather than treating them as disposable items.
+- **Favorite selection** as a first-class operation.
+- One or two companion interactions (e.g. pet and play), giving a visible response.
+- Local persistence of critters, patterns, favorite selection, and interaction state.
+- A **widget-like mock display** that mirrors the selected favorite in the prototype; a separate early **native-widget feasibility spike** should validate actual Android/iOS delivery before claiming a shipping phone widget.
 
-**Return → see companion/home → optionally collect accumulated materials → choose one short activity → craft, decorate, or customize → save and leave.**
+No breeding, social networking, paid shop, gardening, idle production, outing minigames, or generative anatomy is needed to answer the first question.
 
-The player may also choose to do nothing except visit. Neither an adventure nor an idle claim is required to enjoy the home. Returning after an extended absence must not produce a punishment or accusatory message.
+### Candidate acceptance checks
 
-### 2.2 First-session experience [PROPOSAL]
-
-The first launch should offer a simple, immediate path: meet a starter Lumenette (provisionally Pip), choose an initial visual trait, place a decorative object, discover one resource source, and see a clear optional next action. Progress must be saved locally. A player should be able to stop after any completed interaction.
-
-**No account, payment, network, or device-battery permission is required to begin.**
-
-### 2.3 Core feature requirements (candidate acceptance contract)
-
-| ID | Feature | Requirement / acceptance evidence | Trace | Priority |
-| --- | --- | --- | --- | --- |
-| CORE-01 | Companion | Player can view one expressive Lumenette and change at least its name and one visual attribute; a restart preserves choices. | SOURCE + PROPOSAL | Slice |
-| HOME-01 | Home decoration | Player can select, place, move, and remove a decoration without losing it; placement and inventory survive reload. Invalid placements fail gracefully. | SOURCE + PROPOSAL | Slice |
-| IDLE-01 | Offline gathering | Elapsed time advances a bounded resource generator without an active tab or network. Identical saved state, elapsed time, and config produce identical results. | SOURCE + PROPOSAL | Slice |
-| IDLE-02 | Return/claim | Player sees what accumulated, why it is capped, and can claim it exactly once; repeated clicks/reloads do not duplicate rewards. | SOURCE + PROPOSAL | Slice |
-| CRAFT-01 | Make something | One explicit recipe transforms collected resources into a usable decoration or companion accessory, with costs and result visible beforehand. | PROPOSAL | Slice |
-| WANDER-01 | Optional outing | At least one self-contained 1–3-minute activity offers a clear objective, completion state, and modest resource/cosmetic reward. It can be declined without blocking the home loop. | SOURCE + PROPOSAL | Slice |
-| SAVE-01 | Persistence | Local progress survives ordinary reloads, stores a schema version, handles missing/invalid fields, and provides a documented recovery behavior. | SOURCE + PROPOSAL | Slice |
-| UX-01 | Short-session continuity | No required activity forces the player to stay beyond a short session; state is saved at safe points and leaving does not destroy earned durable progress. | SOURCE + PROPOSAL | Slice |
-| UX-02 | Accessible interaction | Essential interactions are available without precision dragging alone; readable labels, focus navigation, motion controls, and appropriate feedback are considered in acceptance tests. | PROPOSAL | Slice |
-| CONTENT-01 | Data-driven content | Furniture, companion appearance options, recipes, rewards, and outing definitions are describable in content data, separate from core simulation rules. | PROPOSAL | Foundation |
-| SOCIAL-01 | Visits | Any future visit system distinguishes real shared data from a labeled simulation; social identity, privacy, moderation, and synchronization must be specified before production. | SOURCE + PROPOSAL | Deferred |
-| WIDGET-01 | Home-screen companion | A native mobile widget may display the chosen Lumenette and glanceable information via platform-specific integration; this is **not** claimed to exist in the web slice. | SOURCE + PROPOSAL | Deferred |
-| COMMERCE-01 | Paid cosmetics | A future store must disclose purchases, preserve non-paying core progression, and obtain separate requirements for purchase/restore/refund; no checkout is in the first slice. | SOURCE + PROPOSAL | Deferred |
-
-**Slice** means the smallest credible playable vertical slice; **Foundation** is design work required to avoid throwaway coupling; **Deferred** is explicitly not an MVP commitment.
-
-### 2.4 Home and personalization [SOURCE + PROPOSAL]
-
-Supported concept: cottage, garden, and burrow decoration, furniture, rugs, lamps, plants, animal beds, yarn craft motifs, companion colors/patterns/faces/accessories, and photo-sharing opportunities.
-
-For the first slice, implement **one bounded home area**. Do not build all three spaces until the placement model has been tested. Separate *owned objects* from *placed instances*; removing a placement must not destroy ownership. Specify how decorations overlap, rotate, and snap only after a layout experiment.
-
-Lumenettes should communicate through a small set of readable expressions or animations. **No neglected-companion penalty** is proposed. Friendship, mood, and “care” may eventually be expressive systems, but must not covertly become maintenance chores.
-
-### 2.5 Wander excursions [SOURCE + PROPOSAL]
-
-The baseline suggests three interactions: catching drifting skeins, avoiding brambles, and mending a scarf pattern. These are *ideas*, not verified minigames. Prototype each cheaply and choose the strongest first-slice mechanic by observed usability and replay value.
-
-Candidate encounter contract: identifier, presentation content, player controls, explicit objective, outcome, accessibility alternative, base duration target, and reward table. Completion must be resilient to interruption. No permanent failure penalty is specified.
-
-### 2.6 Idle economy and crafting [SOURCE + PROPOSAL]
-
-Idle activity may include gathering yarn/materials, tending garden crops, and making simple items. The source suggests upgrade dimensions of rate, yield, and rare-material chance, plus occasional cooldowns and a maximum offline catch-up period.
-
-For the first slice:
-
-- **One deterministic generator** and **one spending sink** are sufficient to test the loop.
-- Store **last simulation timestamp**, generator configuration, claimed/unclaimed resources, and inventory distinctly.
-- Calculate offline gains from elapsed time up to a **configurable cap**; clamp negative time deltas and protect against clock manipulation/large jumps.
-- Specify whether unclaimed accrual continues after the cap. Make claims idempotent and protect against overflow.
-- Rate, yield, drop chance, cooldown, and cap all live in versioned gameplay configuration; do not invent permanent balance values in implementation.
-- The README's “couple of hours” for live upgrades and “couple of minutes” in its supposed prototype are **unapproved tuning examples**, not requirements.
-
-**OPEN:** exact resources, number of crafting tiers, what “tokens” purchase, rare-material distribution, inventory limits, and whether players can lose resources. No paid currency is required in the first slice.
-
-### 2.7 Social, visits, and sharing [SOURCE + PROPOSAL]
-
-The intended fantasy includes visiting another player's home, reactions, small gifts, asynchronous sharing, and possibly co-op. These entail accounts, networking, sync conflicts, user-generated content, abuse controls, and data retention. They do **not** belong in the first playable slice.
-
-Photo mode can initially produce a locally saved screenshot without any social backend. If online visits are later approved, define visibility settings, abuse/report/block behavior, rate limits, gift economics, moderation, and deletion before launch. Do not imply that simulated neighbors are real players.
-
-### 2.8 Battery companion and widget [SOURCE, critically assessed]
-
-The pitch mentions an on-device battery widget and a roughly 70%-charge threshold yielding a resource/reward benefit. These are distinct concerns:
-
-1. **Display the companion or charge**: optional presentation, potentially valuable.
-2. **Tie progression rewards to battery charge**: a balance, fairness, privacy, and device-behavior decision, **not accepted by default**.
-3. **Native home-screen widget**: requires platform-specific work; not equivalent to an in-web-app status card.
-
-**Candidate constraints:**
-
-- Core gameplay works identically when battery information is unavailable or access is denied.
-- Do not prompt players to keep a device charging merely to earn game resources.
-- No battery polling in the core simulation; a capability adapter reports optional, coarse presentation state.
-- An in-app *companion panel* may be prototyped on the web; it must not be labeled a native home-screen widget.
-- No device information leaves the device without a separate reviewed requirement.
-- **OPEN:** whether the original reward mechanic is actually essential, cosmetic-only, or should be removed.
-
-Compatibility basis: [MDN Battery Status API](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API) reports limited web-browser availability; [Apple WidgetKit](https://developer.apple.com/documentation/widgetkit/) and [Android Glance](https://developer.android.com/develop/ui/compose/glance/create-app-widget) are native widget paths.
-
-### 2.9 Monetization [SOURCE, unresolved contradiction]
-
-The source simultaneously says **no purchasable power** and proposes a “Hollow Patron” offering **faster idle**. Faster idle is a gameplay advantage, regardless of whether described as “mild quality-of-life.”
-
-**PROPOSAL:** no payments in the first slice. Later, start with purely cosmetic packs, accessible preview, clear ownership and restoration, and no advantage affecting output, progression, or time pressure. A patron subscription or accelerated idle requires an explicit product decision and a re-evaluation of the no-paid-power promise. Do not silently grandfather it into the spec.
-
-## 3. Technical architecture [PROPOSAL, not a chosen stack]
-
-Prioritize **clear contracts and deterministic behavior**, not framework selection. The README's React, TanStack Start/Router, Tailwind, Zustand, and CSS/SVG list is an unverified suggestion because no package or source exists.
-
-Suggested separations:
-
-| Boundary | Owns | Must not own |
+| ID | Requirement | Verifiable result |
 | --- | --- | --- |
-| Game rules / simulation | Resource generation, inventory transactions, crafting, bounded time advancement, progression | DOM, native widget APIs, purchases, networking |
-| Content definitions | Lumenette palettes/expressions, furniture, recipes, outings, rewards, localized strings | Storage adapters and time sources |
-| Application state and use cases | Orchestrate player commands and produce stable view state | Renderer-specific layout or opaque business rules |
-| Persistence adapter | Versioned save load/write, migration, defensive recovery, local/export strategy | Economy tuning |
-| Presentation | Responsive home, companion, inventory, outings, accessibility and animations | Direct changes to saved totals without game commands |
-| Capability adapters | Optional battery data, native widget, share/export, future social and commerce | Core-progression prerequisites |
-| Observability / verification | Local diagnostics, deterministic test fixtures, opt-in diagnostics if authorized | Hidden telemetry |
+| COL-01 | Unique critter identity | Two critters created from the same pattern remain separate named individuals with separate saved IDs. |
+| PAT-01 | Pattern unlocks | Locked patterns cannot create critters; unlocking one enables its defined critter structure. |
+| PAT-02 | Pattern distinction | At least two toy patterns yield recognizably different critter silhouettes or components. |
+| VAR-01 | Per-critter variation | Configured appearance differences persist and do not modify other critters. |
+| CARE-01 | Companion response | A simple player interaction produces understandable feedback from the selected critter. |
+| FAV-01 | One favorite | Any owned critter can be selected as favorite; switching favorite is reflected in every in-app view of that selection. |
+| SAVE-01 | Persistence | Reload preserves collection, pattern unlocks, each individual's traits and name, and favorite selection. |
+| WID-01 | Widget simulation | A testable widget-facing view model displays the same favorite and a safe fallback when none exists; do not represent a mockup as a native widget. |
+| UX-01 | Gentle interaction | Prototype remains usable after a long absence without irreversible pet loss or resource penalties. |
+| TEST-01 | Repeatability | Fixed random seed and content inputs reproduce the same created critter, and invalid creation/unlock/save operations fail safely. |
 
-**Minimum command model:** explicit typed operations such as *PlaceDecoration*, *RenameCompanion*, *AdvanceOffline*, *ClaimProduction*, *CraftItem*, and *CompleteOuting*. Define preconditions, effects, and replay/idempotency behavior before implementation.
+A native widget is an eventual **product acceptance criterion**, not evidence supplied by the toy.
 
-**State boundary:** versioned save data might include schema version, player identity (local), companion definitions, placed decorations, owned inventory, generator state, progression, and timestamps. This is a schema proposal, not a frozen field list.
+## 4. Pattern system
 
-**Design rules:**
+A **Pattern** is a definition of what can be crocheted, not an individual critter.
 
-- Keep clock and randomness injectable for reproducible tests.
-- Do not invent a server, authentication, or analytics in the slice.
-- Expose tunables and feature flags in centralized configuration, not scattered magic numbers.
-- Preserve backward-readable save behavior or explicitly version migrations when state format changes.
-- Distinguish local storage from authoritative multiplayer state if/when networking becomes real.
-- Prefer a simple renderer and data-driven content over a complicated plugin architecture unless experiments justify it.
+A pattern may specify a base body, allowed body features, topology/silhouette, base materials, optional accessories, and which trait slots can visibly express. An individual **Critter** is one persistent creation produced from a pattern with its own ID, name, visual traits, and relationship state.
 
-## 4. Experience, safety, and quality constraints [PROPOSAL]
+Illustrative progression, **not an approved content list**:
 
-- **Accessibility:** usable touch targets, text equivalents for icons, keyboard/focus navigation for essential actions, visible feedback, reduced-motion path, and non-color-only information.
-- **Caregiver/time-respecting UX:** safe interruption, instant return to context, gentle non-urgent notifications (prefer none initially), no streak pressure, and no forced daily visit.
-- **Performance:** prioritize responsive input and battery-conscious animation on representative low/mid mobile hardware. Set numerical budgets only after choosing target devices and measuring a real build.
-- **Security/privacy:** local-first and no accounts in slice; if social or telemetry is added, define data collection, consent, storage, deletion, and child-safety obligations before activation.
-- **Visual language:** yarn texture, soft edges, legible stitch faces, distinctive silhouettes, and restrained rural fantasy. Create an art direction sheet and small asset/style experiments; no aesthetic quality can be verified from source today.
-- **IP/license:** the README says the creature concept is original and license is TBD. This is an **author statement, not independent clearance**. Obtain a real repository license and asset provenance review before distribution.
+| Complexity | Pattern possibility | Illustration |
+| --- | --- | --- |
+| 1 | Single compact body | Round pom-pom friend with face stitches |
+| 2 | Added features | Creature with ears, tail, or limbs |
+| 3 | Composite construction | Multi-piece critter with distinct body and head |
+| Future | Modular construction | Composable silhouettes, unusual appendages, procedural shapes |
 
-## 5. Milestones and completion gates
+Progression should unlock **new types of possibilities**, not merely increase output rates. The initial prototype can use hand-authored patterns and asset combinations. Nothing requires generating real crochet instructions or physical crochet patterns.
 
-### M0 — Concept validation and specification approval (this draft)
+**Open:** How are patterns discovered: exploration, finding pattern pages, exchanging duplicates, completing collections, or automatic progression? Choose a single simple mechanism for the toy.
 
-**Exit evidence:** product owner confirms core fantasy, primary device, audience intent, must-have experiences, widget priority, monetization boundary, and visual references. Ambiguous items are either decided or deliberately deferred. Draft updated to approved version.
+## 5. Genetics: promising experiment, not initial implementation
 
-### M1 — Playable vertical slice (first code milestone)
+**User-proposed possibility:** each critter carries random traits; pairings may pass traits to offspring; selective breeding may yield pure strains.
 
-**Scope:** one starter Lumenette, one home area, place/move/remove a small set of decorations, one simple generator, one recipe, one short optional outing, local persistence, and responsive navigation.
+Keep three things conceptually separate:
 
-**Exit evidence:** fresh start → interact → earn → craft → place → save/reload → return offline → claim works under automated checks and a manual phone/desktop test. No real shop, widget, or social claims.
+- **Pattern / construction:** determines which structural features are possible.
+- **Heritable trait state:** determines variations that can be expressed within those allowed features, such as yarn coloration, ear style, glow, markings, temperament, etc.
+- **Individual state:** chosen name, relationships, earned cosmetics, and care history; these should not be inherited by default.
 
-### M2 — Cohesive cozy loop
+A basic future trial can start with **one or two independent inheritable loci**, discrete alleles, predictable inheritance, and a visible distinction between expressed appearance (*phenotype*) and underlying trait combination (*genotype*). For example, a simple two-allele color locus can demonstrate a predictable pure-breeding line without pretending that all genetic traits work the same way.
 
-**Scope:** better visual/audio identity, expressions, expanded decor and recipes, polished onboarding, more than one outing if justified, progression tuning, save migration support, accessibility passes, and usability research.
+A “pure strain” might mean an individual is **homozygous at a particular locus**, so descendants from a compatible matching line reliably express that trait. Do not equate “pure” with inherently better, more powerful, or more valuable. Real-world genetics is more complex; this would be a deliberately simplified fictional inheritance system.
 
-**Exit evidence:** repeatable short sessions with clear voluntary goals and no dead-end economy; measured completion/interruption observations; stability checks and documented user feedback.
+**Design fork left open:** Does breeding create a newborn critter directly, or result in a new crochet blueprint/thread to craft? The fiction and interface must reconcile breeding with the idea that all critters are made from crochet patterns.
 
-### M3 — External capabilities (separately approved tracks)
+**A small genetics experiment would test:**
+1. Can players predict outcomes after a few pairings?
+2. Does selective breeding offer meaningful collection goals without imposing chores?
+3. Can pattern complexity and inherited variation coexist without combinatorial art explosions?
 
-**Candidate tracks:** native companion widget, social visits, shared homes/co-op, seasonal content, purchases. Each requires its own product contract, platform/integration validation, moderation/privacy implications, and independent acceptance criteria. None is automatically included in M1/M2.
+Do not implement mutations, procedural anatomy, population simulation, dominant/recessive traits across dozens of loci, or a whole family-tree database before this succeeds.
 
-## 6. Falsifiable design experiments (Kite's proposal)
+## 6. Favorite critter and phone widget
 
-1. **The two-minute return test:** a low-fidelity loop tests whether returning, gathering, making, and decorating feels rewarding without an outing. **Failure signal:** progress feels mechanical or requires too many screens.
-2. **Companion attachment test:** compare a static decorative yarn ball to an expressive, reacting Lumenette. **Failure signal:** expressions add complexity without meaningfully improving comprehension or perceived companionship.
-3. **Wander choice test:** prototype the three README activity concepts with matched presentation; observe completion, confusion, and willingness to replay. **Failure signal:** the selected mechanic is simply more novel, not more enjoyable or accessible.
-4. **Widget proposition test:** show the same companion concept as an in-app panel and as a native-widget mockup before choosing platform investment. **Failure signal:** little value outside the app, or battery rewards become the only reason to use it.
+This is a **core aspiration**, not a peripheral feature.
 
-These are proposed tests, not trials already conducted. Do not collect identifiable telemetry without a reviewed plan and user permission.
+**Desired experience:** Choose a favorite from the collection; that same individual appears on the phone home screen as a small living crochet companion. The widget may reflect simple mood/expression and provide a route back into the game. Specific tap behavior and animation depend on platform capabilities and design choices.
 
-## 7. Acceptance tests for the first code milestone
+**Platform boundary:** a responsive website does not automatically supply a native Android/iOS home-screen widget. The product requires a native bridge/app, supported platform-specific extension, or another verified delivery mechanism. The stack is therefore **not selected**. Validate platform support and data-sharing/update behavior early rather than designing the whole game around an unproven assumption.
 
-- **T-01 First run:** no existing save, no account, no network → usable home and starter companion.
-- **T-02 Persistence:** rename, customize, decorate, reload → exactly the same durable state.
-- **T-03 Offline:** same input save + elapsed interval + config → same resource gain; elapsed below zero → no negative award; huge elapsed → configured cap.
-- **T-04 Claim:** claiming twice, including reload/retry, cannot award twice.
-- **T-05 Transactions:** insufficient crafting resources changes nothing; sufficient resources are consumed once and crafted item appears once.
-- **T-06 Placement:** invalid position rejected with explanation; removing a decoration returns the owned object to availability.
-- **T-07 Wander:** user may skip; successful completion awards documented result; interruption does not silently duplicate or forfeit earned durable progress.
-- **T-08 Device capabilities:** battery API missing/denied, no native widget, network offline → core loop remains fully playable.
-- **T-09 Interaction:** complete first-session actions on touch and by keyboard, with non-color-only cues and reduced motion.
-- **T-10 Evidence:** CI checks and tested device/browser matrix reported honestly; no “playable” or “complete” label without matching artifact and execution evidence.
+**Candidate widget requirements after platform decision:**
+- WID-02: Favorite changes in-app are reflected in the widget within a specified, platform-realistic update bound.
+- WID-03: The widget remains meaningful if the app is closed, offline, or the device restarts.
+- WID-04: Removed or missing favorites fall back safely; widget actions never corrupt collection state.
+- WID-05: Widget presentation is readable in common sizes and respects platform updates, battery use, privacy and accessibility constraints.
 
-Use synthetic test saves and deterministic clocks; these cases are *not yet implemented or executed*.
+**Not assumed:** direct battery monitoring, earning resources when charged, animation at arbitrary frame rates, or running full game logic continuously in a widget.
 
-## 8. Decision register [OPEN — product-owner authority]
+## 7. Architecture principles (keep simple)
 
-| Decision | Options to present | Recommendation | Affects |
-| --- | --- | --- | --- |
-| D-01 Primary delight | Decorating / Lumenette companionship / Crochet craft / Exploring | Validate which is the main reason to open the game | Core loop |
-| D-02 Release target | Web first / Android first / iOS first / shared native+web | Web slice first unless widget is mandatory day one | Architecture |
-| D-03 Audience | Time-limited adults/caregivers / families/children / general | Clarify before age, privacy, language and commerce decisions | UX, compliance |
-| D-04 Craft mechanics | Recipe inventory / pattern-making interaction / both | Recipe loop first; prototype interaction separately | Economy, content |
-| D-05 Battery mechanic | Visual companion only / optional flavor / gameplay bonus | No gameplay bonus until fairness and support proven | Platform, balance |
-| D-06 Commerce | None / cosmetic-only / cosmetic + convenience | None in slice; cosmetic-only later | Economy, trust |
-| D-07 Social | Local photo export / async visits / live co-op | Local export first; networked features later | Infrastructure, safety |
-| D-08 Visual identity | Illustrated 2D / stitched-paper 2D / lightweight 3D | Compare mockups before selecting renderer | Art, performance |
-| D-09 Offline limits | Cap, claim cadence and upgrade pacing | Define through config and short-session user testing | Balance |
-| D-10 Brand/title | Lumenette Hollow / Hollowlumen / other | Ask owner to choose canonical player-facing name | Branding |
+Do not choose a programming language or framework based on the README, which only described an unverified prototype stack.
 
-**No decision in this register is presumed answered.**
+Separate only the boundaries needed to preserve the product's future:
 
-## 9. Definition of Done and change control
+| Model | Responsibility |
+| --- | --- |
+| **Pattern catalog** | Definitions, complexity/unlock states, available morphology and trait slots |
+| **Critter collection** | Stable individual IDs, ownership, names, appearance, favorite ID |
+| **Companion interactions** | Care events and player-facing response/state |
+| **Persistence** | Versioned save/load, migrations, corruption handling |
+| **Renderer and widget adapter** | Consistent representation of one critter in the game or on phone home screen |
+| **Optional genetics module — future** | Trait generation, genotype/phenotype and inheritance without replacing core critter identity |
 
-An MVP requirement becomes **DONE** only when (1) its behavior is present in source, (2) acceptance criteria are exercised, (3) adverse/boundary conditions are checked in scope, (4) a repeatable build exists, and (5) limitations are documented. A checkbox in a pitch is not evidence.
+Keep content data and simulation rules apart. Expose random source and clock via explicit interfaces for repeatable tests. A missing native widget must not cause collection gameplay to fail. No multiplayer server, shop, gameplay currency, idle economy, or giant ECS is required merely to create the toy.
 
-Each accepted change to this document should record its decision owner, rationale, source revision, and affected requirement IDs. Separate **product specification** (what experience is wanted), **technical ADRs** (how it will be built), **roadmap** (when), and **test evidence** (what actually works). No implementation has been authorized by this specification alone.
+**Key invariant:** a critter is an **individual** with identity independent from the pattern used to make it. Future genetics cannot quietly change or overwrite that identity model.
+
+## 8. Delivery sequence
+
+**Checkpoint A — The creature is lovable.** Create, name, vary, view, and pet a critter in a local minimal prototype. Confirm the character and visual style work.
+
+**Checkpoint B — The collection is satisfying.** Implement small pattern progression, multiple persistent critters, favorites, and a consistent widget-facing presentation model.
+
+**Checkpoint C — Phone widget is real.** Choose the phone target and validate native widget integration, lifecycle, favorite synchronization, and test-device behavior. This is necessary before claiming the central product premise works.
+
+**Checkpoint D — Inheritance experiment.** Independently prototype tiny trait inheritance and selective breeding. Promote into the game only if players find it understandable and rewarding.
+
+**Someday — Procedural complexity.** Spore-like anatomy combinations, advanced breeding systems, and broader world interactions only if the proven core needs them.
+
+Each checkpoint needs a working artifact and evidence relevant to its claim. A written spec does not mark code complete.
+
+## 9. Decisions we actually need next
+
+1. **Critter visual form:** 2D handmade illustration, sprite/rigged 2D, or small 3D plush? This determines how cheaply patterns and traits can combine.
+2. **Initial target phone:** Android, iOS, or both? This affects the widget experiment.
+3. **Care intensity:** merely expressive petting/play, or actual Tamagotchi needs and consequences?
+4. **Pattern discovery:** what enjoyable action unlocks a new body plan?
+5. **Genetic trial timing:** after widget validation, or as a small independent experiment sooner?
+6. **Working name:** Hollowlumen versus Lumenette Hollow, and whether “Lumenette” remains the creature name.
+
+These are questions, not blockers for concept exploration. Do not substitute implementation guesses for the product owner's choices.
+
+## 10. Definition of done for this document
+
+**This draft is useful** when it distinguishes the essential creature experience from possible future extensions and can guide a cheap prototype.
+
+**It is approved** only when the product owner accepts the scope, decisions, and acceptance criteria.
+
+**Software features are implemented** only when source exists and corresponding checks have actually run. On the inspected source baseline, the project remains at concept stage.
