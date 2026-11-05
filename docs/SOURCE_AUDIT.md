@@ -1,70 +1,41 @@
-# Hollowlumen — Baseline Source Audit and Specification Triage
+# Hollowlumen — Original Pitch Audit
 
-**Audit date:** 2026-11-05  
-**Inspected revision:** [ac0317e250bef11c1f12abebe7be023aa41ecb47](https://github.com/cosmicdance-4-2-0/hollowlumen/commit/ac0317e250bef11c1f12abebe7be023aa41ecb47) on main  
-**Evidence:** GitHub recursive tree at that revision consists of **README.md only**. There is no source tree, package.json, lockfile, tests, art assets or runnable prototype in the repository.  
-**Outcome:** Documentation reconstruction, not feature verification. Read the [product specification draft](PRODUCT_SPEC.md) for proposed replacement requirements.
+**Checked:** 2026-11-05. **Baseline:** [main at ac0317e](https://github.com/cosmicdance-4-2-0/hollowlumen/tree/ac0317e250bef11c1f12abebe7be023aa41ecb47).
 
-## 1. Extracted source signals (worth retaining)
+## Why this exists
 
-| Signal | Evidence in source | Interpretation |
-| --- | --- | --- |
-| Cozy fantasy life sim | Opening premise, home and companions | Product identity, subject to owner approval |
-| Living yarn companions | “Lumenettes”; yarn colors, faces, accessories | Distinctive visual and emotional hook |
-| Short, interruptible sessions | 1–5 minute play, 1–3 minute wander | Strong experience principle |
-| Personal home space | Cottage, garden, burrow and decoration | Primary expressive system candidate |
-| Offline production | Yarn gathering, garden, bounded catch-up | Companion system to active play |
-| Optional adventure | Three described outing concepts | Variety without mandatory progression |
-| Social warmth | Friend visits, gifts, sharing | Future aspiration, not verified feature |
-| Companion out of game | Battery display / native widget fantasy | Platform investigation candidate |
-| Fairness promise | No paywalls on core progression | Valuable constraint, contradicted by one pack |
-| Example brand elements | Lumenette Hollow, Lumenettes, Pip | Naming candidates, not an approved brand guide |
+At the inspected commit, the complete repository tree contained **one file: README.md**. Despite statements that it was a "playable prototype", listed npm commands and checked completed roadmap items, it had **no application source, package manifest, test suite, or assets**. The claims of implementation could not be verified.
 
-**Evidence vocabulary:** “Described” does not mean implemented. No external design brief, art references, gameplay prototype, or product-owner interview was provided in the inspected repository.
+The first spec reconstruction incorrectly made **cottage decoration, idle resource gathering, wandering, and a shop** the main game. The user then clarified the actual desired direction: **Tamagotchi-like living crochet critters**, collected by unlocking increasingly complex **patterns**, with a **favorite critter living on a phone home-screen widget**. Genetic variation, selective breeding, pure strains, and far-future Spore-like development were framed as possible depth. This correction is the basis of [PRODUCT_SPEC.md](PRODUCT_SPEC.md) v0.2.0-draft.
 
-## 2. Material problems to correct
+## Reusable information from the original README
 
-| ID | Observation | Why it matters | Recommended disposition |
-| --- | --- | --- | --- |
-| F-01 | README says **Playable prototype**, lists completed roadmap items and provides npm build/run commands; repo has README only. | Unsupported status and unusable onboarding. | The proposed branch corrects the README to **concept/specification**; only claim builds with evidence. |
-| F-02 | “Web prototype” and “battery widget” blur an in-app UI with a real mobile home-screen widget. | Wrong platform commitments; native work is separate. | Define in-app companion panel versus native iOS/Android widget. |
-| F-03 | Claimed >~70% battery gameplay bonus rests on API support not guaranteed in browsers. | Cross-platform parity and fairness risk. | Capability-gated optional presentation; owner decides any reward effect. |
-| F-04 | **No paid power** clashes with “Hollow Patron” **faster idle**. | Core product promise contradicted. | Defer monetization and explicitly decide cosmetic-only versus paid convenience. |
-| F-05 | First MVP includes home, garden, burrow, three minigames, idle, widget, store, and multiplayer simulation. | Unbounded scope for a repository with no application code. | Propose one vertical slice with clear exit criteria. |
-| F-06 | Resource economy, crafting process, upgrade costs, caps, rare drops and token purpose are undefined. | No way to build or test consistent progression. | Specify transaction invariants, then tune via config and experiments. |
-| F-07 | “Couple of hours” live cooldowns and “couple of minutes” prototype cooldowns are mixed. | Tuning examples can be mistaken for production constants. | Separate illustrative values from approved balance tables. |
-| F-08 | “Baby-friendly sessions” is ambiguous. | May imply child audience, caregiver-friendly play, or both. | Ask product owner; do not infer age rating or compliance. |
-| F-09 | The stack is named but no package manifest or source verifies it. | Premature technical lock-in. | Defer framework choice until platform and slice constraints are approved. |
-| F-10 | “Friends can visit” but “real multiplayer visits simulated.” | Social expectations and data boundaries are unclear. | Mark mock behavior as mock; networked interaction deferred. |
-| F-11 | No state schema, sync strategy, offline clock policy, failure recovery, or save migration plan. | Progress loss/duplication risk in a persistence-led game. | Make deterministic state and versioned saves part of slice foundation. |
-| F-12 | No acceptance criteria, test fixtures, target device matrix, art direction package, or license. | Neither correctness nor readiness can be established. | Add measurable gates and explicit owners before calling anything shipped. |
+| Original pitch element | Current treatment |
+| --- | --- |
+| Whimsical crochet/yarn creatures | Keep as the central world identity |
+| Living expressive companions ("Lumenettes") | Keep concept; names remain provisional |
+| Customizable colors, stitch faces and accessories | Relevant to critter appearance and variation |
+| Friendly, relaxed tone | Keep as direction; exact care mechanics undecided |
+| Short sessions | A useful option, not a forced genre mandate |
+| A chosen companion in the phone widget | Promote as core product experience, subject to native platform feasibility |
+| Cottage, garden, burrow, furniture, photo mode | Not part of the current core |
+| Short adventure minigames, rare yarn and idle upgrades | Not part of the current core |
+| Shop, VIP pack and monetized idle acceleration | Not part of the current core; paid power contradicted the original fairness claim |
+| Browser battery level boosts | Not part of the current core; web availability and device incentives were suspect |
+| Social visits, gifting, co-op | Not part of the current core |
+| Proposed React / TanStack / Tailwind / Zustand stack | Not verified, not selected |
+| "Playable prototype" and completed-roadmap checkboxes | Unsupported by the actual repository tree |
+| License TBD | Still unresolved; do not imply redistribution permission |
 
-## 3. Source-to-spec trace
+## Product distinctions that matter
 
-- **Premise / tone / loop** → Product spec §§1–2.
-- **Home / decoration / Lumenettes** → §§2.3–2.4.
-- **Short trips / optional activities** → §§2.3, 2.5.
-- **Idle / capped catch-up / yarn economy** → §§2.3, 2.6.
-- **Friends / gifts / photo mode** → §§2.3, 2.7.
-- **Battery / widget** → §§2.3, 2.8.
-- **Shop / patron pack** → §§2.3, 2.9.
-- **Technology / platforms / saves** → §§1.3, 3–4.
-- **Roadmap, completion, missing evidence** → §§5, 7, 9.
+- **A crochet Pattern** defines structural possibilities. **A Critter** is a persistent individual created from a pattern.
+- **Genetics** is a plausible optional mechanism for controlled variation among individuals, not a prerequisite for the first toy.
+- **The favorite widget** is a core aspiration. A web page that displays a fake widget does not fulfill native Android/iOS integration.
+- **Spore-like procedural morphology** is intentionally future exploration, not an architectural mandate.
 
-## 4. What this draft intentionally did not do
+## What the documentation changes prove
 
-- Did not infer the product owner's consent, priorities, demographics, monetization policy, or favorite art style.
-- Did not implement gameplay, create a build manifest, or fabricate demo screenshots.
-- Did not lock a framework, rendering engine, cloud backend, or monetary model.
-- Did not copy unverified README completion checkmarks into an engineering roadmap.
-- Replaced the misleading default README on this proposed branch with a truthful specification entrypoint. The original wording remains available through the pinned source commit above, and main is unchanged unless this proposal is merged.
+The documents can support a review of product intent, open choices and proposed tests. They **cannot** prove that any gameplay exists, that a native widget can already run, or that the product owner has endorsed all details.
 
-## 5. Suggested next review checkpoint
-
-Obtain product-owner answers to **D-01, D-02, D-04, D-05, D-06 and D-08** in the product spec. Produce 2–3 low-cost visual mockups and one interaction loop, select a candidate, then promote the accepted document to **v0.2 approved design baseline**. Only then choose technology and commission the M1 executable slice.
-
-External technical verification references:
-
-- [MDN Battery Status API — limited availability](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API)
-- [Apple WidgetKit](https://developer.apple.com/documentation/widgetkit/)
-- [Android Glance app widgets](https://developer.android.com/develop/ui/compose/glance/create-app-widget)
+The initial README remains available at the pinned baseline above. The new README and specification in the draft PR are revisions for discussion, not a release.
