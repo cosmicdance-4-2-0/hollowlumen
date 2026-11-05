@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<title id="title">Hollowlumen app icon concept</title>
+<desc id="desc">Smiling stitched lavender critter on a rounded lilac tile with a tiny golden sparkle.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F3EEFF"/><stop offset="1" stop-color="#D8C3F2"/></linearGradient></defs>
+<rect width="512" height="512" rx="115" fill="url(#bg)"/>
+<circle cx="255" cy="270" r="169" fill="#FFF9F4" opacity=".80"/>
+<path d="M397 93 l12 27 27 12 -27 12 -12 27 -12-27 -27-12 27-12 Z" fill="#E3B85D"/>
+<g transform="translate(30 23) scale(2.78)">
+  <path d="M49 52 C35 38 35 21 45 19 C58 15 68 33 71 49" fill="#F9DDEB" stroke="#67438D" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M110 53 C123 38 124 21 114 19 C101 15 92 33 89 49" fill="#F9DDEB" stroke="#67438D" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M55 47 C44 35 45 27 49 27 C55 28 62 36 65 46" fill="#E8DAFA"/>
+  <path d="M105 47 C115 35 114 27 110 27 C104 28 98 36 95 46" fill="#E8DAFA"/>
+  <path d="M80 41 C105 41 125 60 125 91 C125 116 109 133 80 133 C50 133 35 115 35 90 C35 61 52 41 80 41 Z" fill="#E8DAFA" stroke="#67438D" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M49 64 l6 5 6-5 m13-7 l6 5 6-5 m13 7 l6 5 6-5 M44 82 l6 5 6-5 m48 0 l6 5 6-5 M54 115 l5 5 5-5 m11 8 l5 5 5-5 m11-8 l5 5 5-5" fill="none" stroke="#BEA5E5" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M59 79 q7 -4 12 0" fill="none" stroke="#332940" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M89 79 q7 -4 12 0" fill="none" stroke="#332940" stroke-width="4.5" stroke-linecap="round"/>
+  <ellipse cx="58" cy="93" rx="7" ry="4.2" fill="#F5B8C9" opacity=".86"/>
+  <ellipse cx="102" cy="93" rx="7" ry="4.2" fill="#F5B8C9" opacity=".86"/>
+  <path d="M74 94 q6 8 12 0" fill="none" stroke="#332940" stroke-width="3.7" stroke-linecap="round"/>
+  <path d="M117 117 C132 127 151 114 146 100 C142 90 133 96 136 103 C138 108 147 109 152 105" fill="none" stroke="#67438D" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<path d="M85 408 C183 435 305 436 398 410" fill="none" stroke="#BEA5E5" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 18"/>
+</svg>
